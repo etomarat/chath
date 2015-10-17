@@ -5,13 +5,15 @@
 <body>
   <div class="container">
     <form class="prompt-form">
-      <input type="text" name="input" class="input">
+      <input type="text" name="input" autocomplete="off" class="input">
     </form>
 
     <div class="terminal">
-        <p
-class="prompt">=====================================
-  ========  ======      =========  ====
+        <p class="prompt"
+ >=====================================                             view sources:
+  ========  ======      =========  ====            <a href="https://github.com/etomarat/chath"
+																		target="_blank"
+																  >www.github.com/etomarat/chath</a>
   ========  =====   ==   ========  ====
   ========  =====  =     ===  ===  ====
   ==   ===  =====  =  =  ==    ==  ====
@@ -29,16 +31,8 @@ class="prompt">=====================================
         <p class="prompt output new-output"></p>
     </div>
   </div>
-
-  {{> hello}}
-
 </body>
 
 <template name="message">
   <p datetime="{{createdAt}}" class="prompt">{{text}}</p>
-</template>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
 </template>

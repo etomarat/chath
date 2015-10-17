@@ -18,33 +18,13 @@ body{
   background-color: black;
 }
 
-.four-oh-four{
-	position: relative;
-	top: 0;
-	left: 0;
-	min-height: 100vh;
-	min-width: 100vw;
-	z-index: 2;
-	background-color: black;
-	transition: opacity 300ms ease-out;
-	background-position: center center;
-	background-repeat: no-repeat;
-	.dJAX_internal{
-		opacity: 0.0;
-	}
-
-	form, input{
-		position: fixed;
-		top: 0;
-		left: 0;
-		opacity: 0;
-		background-color: black;
-	}
-}
-
 .terminal{
 	position: relative;
 	padding: 4rem;
+
+	a {
+		color: inherit;
+	}
 
 	.prompt{
 		color: $green;
@@ -79,19 +59,6 @@ body{
 			content: '';
 		}
 	}
-}
-
-.kittens{
-	p{
-		letter-spacing: 0;
-		opacity: 0;
-		line-height: 1rem;
-	}
-}
-
-.kitten-gif{
-	margin: 20px;
-	max-width: 300px;
 }
 
 .prompt-form{
