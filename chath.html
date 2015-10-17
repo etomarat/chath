@@ -1,0 +1,44 @@
+<head>
+  <title>ch@th</title>
+</head>
+
+<body>
+  <div class="container">
+    <form class="prompt-form">
+      <input type="text" name="input" class="input">
+    </form>
+
+    <div class="terminal">
+        <p
+class="prompt">=====================================
+  ========  ======      =========  ====
+  ========  =====   ==   ========  ====
+  ========  =====  =     ===  ===  ====
+  ==   ===  =====  =  =  ==    ==  ====
+  =  =  ==    ===  =  =  ===  ===    ==
+  =  =====  =  ==  =  =  ===  ===  =  =
+  =  =====  =  ==  =   =====  ===  =  =
+  =  =  ==  =  ==   ==   ===  ===  =  =
+  ==   ===  =  ===      ====   ==  =  =
+  =====================================
+  welcomes you
+        </p>
+        {{#each messages}}
+          {{> message}}
+        {{/each}}
+        <p class="prompt output new-output"></p>
+    </div>
+  </div>
+
+  {{> hello}}
+
+</body>
+
+<template name="message">
+  <p datetime="{{createdAt}}" class="prompt">{{text}}</p>
+</template>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
