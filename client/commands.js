@@ -1,5 +1,17 @@
 var _ = lodash;
 
+/*
+	{
+		name: 'getVideo',
+		helpText: '/post first video from google/',
+		params: 'queryString',
+		run: function(q){
+			q = q.join(' ');
+			Meteor.call('postVideoFromGoogle', q);
+		},
+		return: false,
+		hidden: false
+	},*/
 var commands = [
 	{
 		name: 'clearHistory',
@@ -17,17 +29,6 @@ var commands = [
 		run: function(q){
 			q = q.join(' ');
 			Meteor.call('postImageFromGoogle', q);
-		},
-		return: false,
-		hidden: false
-	},
-	{
-		name: 'getVideo',
-		helpText: '/post first video from google/',
-		params: 'queryString',
-		run: function(q){
-			q = q.join(' ');
-			Meteor.call('postVideoFromGoogle', q);
 		},
 		return: false,
 		hidden: false
